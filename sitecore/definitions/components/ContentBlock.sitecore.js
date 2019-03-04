@@ -6,7 +6,7 @@ import { CommonFieldTypes, SitecoreIcon, Manifest } from '@sitecore-jss/sitecore
  * This function is invoked by convention (*.sitecore.js) when `jss manifest` is run.
  * @param {Manifest} manifest Manifest instance to add components to
  */
-export default function(manifest) {
+export default function (manifest) {
   manifest.addComponent({
     name: 'ContentBlock',
     displayName: 'Content Block',
@@ -14,7 +14,7 @@ export default function(manifest) {
     icon: SitecoreIcon.DocumentTag,
     fields: [
       { name: 'heading', type: CommonFieldTypes.SingleLineText },
-      { name: 'content', type: CommonFieldTypes.RichText },
+      { name: 'backgroundColor', type: CommonFieldTypes.SingleLineText },
     ],
   });
 }

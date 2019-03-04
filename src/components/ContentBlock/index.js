@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, RichText } from '@sitecore-jss/sitecore-jss-react';
+import { Text } from '@sitecore-jss/sitecore-jss-react';
 
 /**
  * A simple Content Block component, with a heading and rich text block.
@@ -7,11 +7,9 @@ import { Text, RichText } from '@sitecore-jss/sitecore-jss-react';
  * JSS component that's useful.
  */
 const ContentBlock = ({ fields }) => (
-  <React.Fragment>
+  <div style={{ backgroundColor: fields.backgroundColor ? fields.backgroundColor.value : null }}>
     <Text tag="h2" className="display-4" field={fields.heading} />
-
-    <RichText className="contentDescription" field={fields.content} />
-  </React.Fragment>
+  </div>
 );
 
 export default ContentBlock;

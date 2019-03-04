@@ -1,8 +1,66 @@
 id: home-page
-fields:
-  pageTitle: Welcome to Sitecore JSS
 placeholders:
   jss-main:
-  - componentName: ContentBlock
+  - componentName: Grid-1-Column
+    placeholders:
+      grid-1-column:
+      - componentName: ContentBlock
+        fields:
+          heading: Full width
+          backgroundColor: lightgray
+  - componentName: Grid-2-Column
+    placeholders:
+      grid-2-column-left:
+      - componentName: ContentBlock
+        fields:
+          heading: 1/2
+          backgroundColor: lightblue
+      grid-2-column-right:
+      - componentName: Grid-2-Column
+        placeholders:
+          grid-2-column-left:
+          - componentName: ContentBlock
+            fields:
+              heading: 1/4
+              backgroundColor: lightgray
+          grid-2-column-right:
+          - componentName: ContentBlock
+            fields:
+              heading: 1/4
+              backgroundColor: lightblue
+  - componentName: Grid-2-Column
     fields:
-      heading: Welcome to Sitecore JSS
+      leftWidth: 0.3
+    placeholders:
+      grid-2-column-left:
+      - componentName: ContentBlock
+        fields:
+          heading: 1/3
+          backgroundColor: lightgray
+      grid-2-column-right:
+      - componentName: ContentBlock
+        fields:
+          heading: 2/3
+          backgroundColor: lightblue
+  - componentName: Grid-2-Column
+    fields:
+      leftWidth: 0.3
+    placeholders:
+      grid-2-column-left:
+      - componentName: ContentBlock
+        fields:
+          heading: 1/3
+          backgroundColor: lightblue
+      grid-2-column-right:
+      - componentName: Grid-2-Column
+        placeholders:
+          grid-2-column-left:
+          - componentName: ContentBlock
+            fields:
+              heading: 1/3
+              backgroundColor: lightgray
+          grid-2-column-right:
+          - componentName: ContentBlock
+            fields:
+              heading: 1/3
+              backgroundColor: lightblue
