@@ -1,7 +1,5 @@
 import React from 'react';
 import { Placeholder } from '@sitecore-jss/sitecore-jss-react';
-import Helmet from 'react-helmet';
-
 import './assets/app.css';
 
 /*
@@ -12,19 +10,9 @@ import './assets/app.css';
   but components added to inner placeholders are route-specific.
 */
 const Layout = ({ route }) => (
-  <React.Fragment>
-    {/* react-helmet enables setting <head> contents, like title and OG meta tags */}
-    <Helmet>
-      <title>
-        {(route.fields && route.fields.pageTitle && route.fields.pageTitle.value) || 'Page'}
-      </title>
-    </Helmet>
-
-    {/* root placeholder for the app, which we add components to using route data */}
-    <div className="container">
-      <Placeholder name="jss-main" rendering={route} />
-    </div>
-  </React.Fragment>
+  <div>
+    <Placeholder name="jss-main" rendering={route} />
+  </div>
 );
 
 export default Layout;
