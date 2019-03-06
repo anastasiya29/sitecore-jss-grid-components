@@ -2,7 +2,7 @@ import React from 'react';
 import { Placeholder } from '@sitecore-jss/sitecore-jss-react';
 import { Flex, Box } from '@rebass/grid'
 
-const Grid1Column = ({ rendering, fields }) => (
+const Grid1Column = ({ rendering, fields, componentFactory }) => (
   <Flex>
     <Box
       width={1}
@@ -10,7 +10,7 @@ const Grid1Column = ({ rendering, fields }) => (
       py={fields.paddingY}
       mx={fields.marginX}
       my={fields.marginY}>
-      <Placeholder name="grid-1-column" rendering={rendering} />
+      <Placeholder name="grid-1-column" rendering={rendering} componentFactory={componentFactory} />
     </Box>
   </Flex>
 );
