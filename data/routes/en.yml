@@ -1,14 +1,14 @@
 id: home-page
 placeholders:
   jss-main:
-  - componentName: Grid-1-Column
+  - componentName: Grid1Column
     placeholders:
       grid-1-column:
       - componentName: ContentBlock
         fields:
           heading: Full width
           backgroundColor: lightgray
-  - componentName: Grid-2-Column
+  - componentName: Grid2Column
     placeholders:
       grid-2-column-left:
       - componentName: ContentBlock
@@ -16,7 +16,7 @@ placeholders:
           heading: 1/2
           backgroundColor: lightblue
       grid-2-column-right:
-      - componentName: Grid-2-Column
+      - componentName: Grid2Column
         placeholders:
           grid-2-column-left:
           - componentName: ContentBlock
@@ -28,7 +28,7 @@ placeholders:
             fields:
               heading: 1/4
               backgroundColor: lightblue
-  - componentName: Grid-2-Column
+  - componentName: Grid2Column
     fields:
       leftWidth: 0.3
     placeholders:
@@ -42,7 +42,7 @@ placeholders:
         fields:
           heading: 2/3
           backgroundColor: lightblue
-  - componentName: Grid-2-Column
+  - componentName: Grid2Column
     fields:
       leftWidth: 0.3
     placeholders:
@@ -52,7 +52,7 @@ placeholders:
           heading: 1/3
           backgroundColor: lightblue
       grid-2-column-right:
-      - componentName: Grid-2-Column
+      - componentName: Grid2Column
         placeholders:
           grid-2-column-left:
           - componentName: ContentBlock
