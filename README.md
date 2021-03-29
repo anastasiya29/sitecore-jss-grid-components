@@ -16,4 +16,4 @@ npm pack
 ```
 
 ## More info
-A blog post about this demo is published here: https://www.codealamodeblog.com/Sitecore/JavaScript-Services/jss-publish-jss-component-library/
+A blog post about this demo is published here: https://codealamode.blog/jss-publish-jss-component-library
